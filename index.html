@@ -1,10 +1,21 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0;url=https://accounts.zoho.eu/oauth/v2/auth?client_id=1000.KHAN5BYIF7HW6M558LJBS635XN2C8S&response_type=code&redirect_uri=https%3a%2f%2fglobal.consent.azure-apim.net%2fredirect%2fzoho-20-2d-20records-5f986ff8b8323de83e-5f5fcff07ad7462059&scope=ZohoCRM.notifications.ALL+ZohoCRM.modules.ALL+ZohoCRM.modules.entity_scores.READ+ZohoCRM.settings.ALL+ZohoCRM.settings.wizards.READ+ZohoCRM.settings.assignment_rules.READ+ZohoCRM.settings.fiscal_year.READ+ZohoCRM.settings.fiscal_year.UPDATE+ZohoCRM.settings.currencies.CREATE+ZohoCRM.settings.currencies.READ+ZohoCRM.settings.currencies.UPDATE+ZohoCRM.settings.emails.READ+ZohoCRM.settings.mailmerge.CREATE+ZohoCRM.settings.audit_logs.CREATE+ZohoCRM.settings.audit_logs.READ+ZohoCRM.settings.recycle_bin.READ+ZohoCRM.settings.recycle_bin.DELETE&access_type=offline" />
+  <title>Redirecting to Zoho OAuth...</title>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const baseUrl = "https://accounts.zoho.eu/oauth/v2/auth";
+
+      // Add required static parameters
+      params.set("access_type", "offline");
+
+      // Redirect to Zoho with all parameters
+      window.location.href = `${baseUrl}?${params.toString()}`;
+    })();
+  </script>
 </head>
 <body>
-  <p>Redirecting to Zoho OAuth...</p>
+  <p>Redirecting to Zoho OAuth...</p>
 </body>
 </html>
